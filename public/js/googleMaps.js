@@ -15,4 +15,13 @@ function initMap() {
       map: map,
       title: 'UCSD'
   });
+
+  google.maps.event.addListener(map, 'click', function(event) {
+      marker = new google.maps.Marker({
+        position: {lat:32.754928, lng: -117.215857},
+        map: map,
+        title:'phils'
+      });
+  });
 }
+
